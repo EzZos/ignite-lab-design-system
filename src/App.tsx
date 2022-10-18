@@ -11,7 +11,7 @@ export function App() {
   return (
     <div className="w-screnn h-screen bg-gray-900 flex flex-col items-center justify-center text-gray-100">
       <header className="flex flex-col items-center">
-        <Logo />
+        <Logo className="animate-spin-slow" />
         <Heading className="mt-4" size="lg">
           Ignite Lab
         </Heading>
@@ -27,7 +27,7 @@ export function App() {
             <TextInput.Icon>
               <Envelope />
             </TextInput.Icon>
-            <TextInput.Input type="email" id="email" placeholder="Digite seu e-mail" />
+            <TextInput.Input type="email" id="email" placeholder="Digite seu e-mail" required/>
           </TextInput.Root>
         </label>
         <label htmlFor="password" className="flex flex-col gap-3">
@@ -36,7 +36,7 @@ export function App() {
             <TextInput.Icon>
               <Lock />
             </TextInput.Icon>
-            <TextInput.Input type="password" id="password" placeholder="********" />
+            <TextInput.Input type="password" id="password" placeholder="********" required/>
           </TextInput.Root>
 
           <label htmlFor="remember" className="flex items-center gap-2">
